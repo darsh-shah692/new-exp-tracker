@@ -1,11 +1,6 @@
-# Sink [![CircleCI](https://circleci.com/gh/vilisimo/sink.svg?style=svg&circle-token=c310e8996b1979feeb3104ef2f8f2068bab3fffe)](https://circleci.com/gh/vilisimo/sink)
-**Sink** is an app that allows you to track your income and expenses.
 
-## Current Status
+**Budget Analysis** is an app that allows you to track your income and expenses.
 
-- [ ] Usable
-- [x] Visually bearable
-- [ ] Unusable
 
 ## Local App Setup
 
@@ -64,15 +59,3 @@ it at the top of the Firebase console screen once inside the database section.
 Once the steps are complete, the app will run and take care of the rest of its
 business itself.
 
-## Screenshots
-### Registration & Sign In
-![Sign In](screens/signin.png) ![Registration](screens/register.png)
-
-### Entry List
-![Entry List](screens/entries.png)
-
-### Category Creation
-![Category Creation](screens/add-category.png)
-
-### Breakdowns
-![Month's Breakdown](screens/month-summary.png) ![Year's Breakdown](screens/year-summary.png)
