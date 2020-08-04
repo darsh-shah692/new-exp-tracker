@@ -15,7 +15,7 @@ dependencies:
   rxdart: ^0.24.1
   path_provider: ^1.6.11
   http: ^0.12.1
-  flutter_local_notifications: ^1.4.4+2
+  # flutter_local_notifications: ^1.4.4+2
   intl: ^0.15.8
   uuid: ^1.0.3
   quiver: ^2.0.2

@@ -26,17 +26,17 @@ class BalanceCard extends StatefulWidget {
 
 class _BalanceCardState extends State<BalanceCard> {
 
-  @override
-  void initState() {
-    super.initState();
-    notificationPlugin.setOnNotificationClick(onNotificationClick);
-  }
+  // @override
+  // void initState() {
+  //   super.initState();
+  //   notificationPlugin.setOnNotificationClick(onNotificationClick);
+  // }
 
-  onNotificationinLowerVersions(ReceivedNotification receivedNotification) {
+  // onNotificationinLowerVersions(ReceivedNotification receivedNotification) {
 
-  }
+  // }
 
-  onNotificationClick(String payload) {}
+  // onNotificationClick(String payload) {}
 
   @override
   Widget build(BuildContext context) {
@@ -55,9 +55,9 @@ class _BalanceCardState extends State<BalanceCard> {
               double expenses = totalExpense(snapshot.data.documents);
               double balance = income - expenses;
 
-              if(balance<100) {
-                notificationPlugin.showNotification();
-              }
+              // if(balance<100) {
+              //   notificationPlugin.showNotification();
+              // }
               
 
               return Container(

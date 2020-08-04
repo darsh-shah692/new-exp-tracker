@@ -59,3 +59,4 @@ it at the top of the Firebase console screen once inside the database section.
 Once the steps are complete, the app will run and take care of the rest of its
 business itself.
 
+

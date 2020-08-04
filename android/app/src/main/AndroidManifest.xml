@@ -37,17 +37,17 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
 
-            <intent-filter>
+            <!-- <intent-filter>
                 <action android:name="FLUTTER_NOTIFICATION_CLICK" />
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            </intent-filter> -->
 
             <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver">
                 <intent-filter>
                     <action android:name="android.intent.action.BOOT_COMPLETED"></action>
                 </intent-filter>
             </receiver>
-            <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+            <!-- <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" /> -->
 
             
             
