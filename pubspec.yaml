@@ -19,6 +19,8 @@ dependencies:
   intl: ^0.15.8
   uuid: ^1.0.3
   quiver: ^2.0.2
+  firebase_ml_vision: ^0.9.3+8
+  image_picker: ^0.6.3+4
 
 dev_dependencies:
   flutter_test:

@@ -7,6 +7,9 @@ import 'package:sink/ui/common/date_picker.dart';
 import 'package:sink/ui/common/number_input.dart';
 import 'package:sink/ui/common/text_input.dart';
 import 'package:sink/ui/forms/category_grid.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:firebase_ml_vision/firebase_ml_vision.dart';
+import 'dart:io';
 
 class EntryForm extends StatefulWidget {
   final Function(Entry) onSave;
@@ -24,7 +27,11 @@ class EntryFormState extends State<EntryForm> {
   static const inputPadding = EdgeInsets.all(16.0);
   static const cardPadding = EdgeInsets.only(left: 16.0, right: 16.0);
   static const datePadding = EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0);
+  // File pickedImage;
+  // var text = '';
 
+
+  // bool imageLoaded = false;  //variables that are needed for the ocr 
   final Entry entry;
 
   static List<String> options = toCapitalizedStringList(EntryType.values);
@@ -60,6 +67,32 @@ class EntryFormState extends State<EntryForm> {
   bool isSaveable() {
     return _amount != null && !isBlank(_selectedCategoryId);
   }
+
+  // Future pickImage() async { //this commented code is for recognizing the image and opening the camera and taking the image
+  //   var awaitImage = await ImagePicker.pickImage(source: ImageSource.camera);
+
+  //   setState(() {
+  //     pickedImage = awaitImage;
+  //     imageLoaded = true;
+  //   });
+  //   FirebaseVisionImage visionImage = FirebaseVisionImage.fromFile(pickedImage);
+  //   TextRecognizer textRecognizer = FirebaseVision.instance.textRecognizer();
+  //   VisionText visionText = await textRecognizer.processImage(visionImage);
+
+  //   for (TextBlock block in visionText.blocks) {
+  //     for (TextLine line in block.lines) {
+  //       for (TextElement word in line.elements) {
+          
+            
+  //       text = text + word.text + ' ';
+            
+         
+  //       }
+  //       text = text + '\n';
+  //     }
+  //   }
+  //   textRecognizer.close();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -143,6 +176,13 @@ class EntryFormState extends State<EntryForm> {
           ),
         ],
       ),
+      floatingActionButton: FloatingActionButton(
+            onPressed: () {
+            //pickImage(); // Add your onPressed code here!
+          },
+          child: Icon(Icons.photo_camera),
+          backgroundColor: Colors.green,
+        ),
     );
   }
 
